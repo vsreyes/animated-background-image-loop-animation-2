@@ -50,7 +50,7 @@ section h2 {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   100% {
     transform: translateZ(0px);
@@ -58,7 +58,36 @@ section h2 {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    border: 1px solid rgba(0,0,0,.1)
-    box-shadow: 0 5px 15px rgba(0,0,0,0);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+  }
+}
+
+section.active .banner .blocks {
+  animation: animateTwo 2s ease-in-out forwards;
+  background: url(bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes animateTwo {
+  0% {
+    transform: translateZ(0px);
+    background: url(bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: translateZ(2000px);
+    background: url(bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   }
 }
